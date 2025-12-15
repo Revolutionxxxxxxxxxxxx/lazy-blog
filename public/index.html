@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lazy Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/">The Lazy Blog</a></h1>
+        <nav id="main-nav">
+            <!-- Populated by JS -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="grid" id="posts-grid" data-masonry='{ "itemSelector": ".card", "columnWidth": 300, "gutter": 20, "fitWidth": true }'>
+            <!-- Posts injected here -->
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+    <script>
+        // Init Masonry after content load hack
+        // Since app.js is async, we might need to trigger layout again.
+        // We'll handle this inside app.js or use mutation observer if we were fancy.
+        // For now, the app.js will just inject HTML. 
+        // We'll add a helper in app.js to reload masonry layout.
+    </script>
+</body>
+</html>

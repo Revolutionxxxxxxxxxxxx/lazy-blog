@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - The Lazy Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">The Lazy Blog</a></h1>
+        <nav id="main-nav"></nav>
+    </header>
+
+    <div class="article-container" id="article-content">
+        <div class="article-header">
+            <h1 id="article-title">Loading...</h1>
+            <div class="article-meta" id="article-meta"></div>
+        </div>
+        
+        <div class="article-body" id="article-body"></div>
+
+        <div class="actions">
+            <button id="like-btn" class="like-btn">Like</button>
+            <span id="like-count">0 Likes</span>
+        </div>
+
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <form id="comment-form">
+                <input type="text" id="comment-input" placeholder="Write a comment..." required style="width: 70%;">
+                <button type="submit">Post</button>
+            </form>
+            <div id="comments-list"></div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

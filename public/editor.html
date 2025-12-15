@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor - The Lazy Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">The Lazy Blog</a></h1>
+        <nav id="main-nav"></nav>
+    </header>
+
+    <div class="container">
+        <h2>Write Article</h2>
+        <form id="editor-form" class="editor-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="url" id="image_url" placeholder="Cover Image URL (Optional)">
+            <textarea id="content" placeholder="Write your story..." required></textarea>
+            <button type="submit">Publish</button>
+        </form>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
